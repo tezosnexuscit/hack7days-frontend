@@ -36,11 +36,13 @@
 </script>
 
 <main class="mt-24 flex w-full flex-wrap items-center">
-	<div class="mb-8 flex items-center">
+	<div class="mb-8 flex items-center justify-start gap-10">
 		<img src={Mouth} class="h-52 w-52 md:h-[22rem] md:w-[22rem]" alt="" />
-		<h2 class="mx-5 break-words text-4xl font-black md:hidden">Get ready to Hack!</h2>
+		<h2 class="mx-5 break-words text-4xl font-black xl:hidden">Get ready to Hack!</h2>
 	</div>
 	{#each data as eventData, i}
-		<Day day={`0${i + 1}`} speaker={eventData.speaker} topic={eventData.topic} />
+		{#if i != 5 && i != 4}
+			<Day day={`0${i + 1}`} speaker={eventData.speaker} topic={eventData.topic} />
+		{/if}
 	{/each}
 </main>

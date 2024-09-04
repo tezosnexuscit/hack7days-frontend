@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Horn from '$lib/assets/horn.svg';
-
 	import Tezos from '$lib/assets/tezos.svg';
 	import Whapp from '$lib/assets/whapp.svg';
 	import HornMobile from '$lib/assets/horn-mobile.svg';
@@ -16,7 +15,7 @@
 				technology <br />
 				that will lead us into a decentralized future."
 			</h2>
-			<img src={Tezos} class="h-28 w-56 tenk24:hidden" alt="" />
+			<img src={Tezos} class="h-28 w-56 tenk24:hidden" alt="Tezos logo" />
 			<h1 class="text-xl leading-[1.2] tenk24:text-5xl">
 				Get ready to elevate your skills to <br class="hidden tenk24:block" /> the next level with
 				Hack7Days, <br class="hidden tenk24:block" /> the ultimate hackathon for
@@ -25,18 +24,52 @@
 			</h1>
 		</div>
 		<div class="flex w-full flex-wrap items-center gap-5">
-			<button class="flex rounded-lg bg-btn-blue p-3 text-lg font-bold text-white tenk24:p-4"
-				>Register now</button
+			<a
+				href="https://lu.ma/k52ernr2"
+				target="_blank"
+				class="interactive-button bg-btn-blue text-white"
 			>
-			<button
-				class="flex items-center justify-center gap-3 rounded-lg bg-btn-green p-3 text-lg font-bold text-white tenk24:p-4"
+				Register now
+			</a>
+			<a
+				href="https://chat.whatsapp.com/IMEuQ5IFCegFz5MZUsgF9w"
+				target="_blank"
+				class="interactive-button bg-btn-green leading-none text-white"
 			>
-				<img src={Whapp} alt="" />
-				<a href="https://chat.whatsapp.com/IMEuQ5IFCegFz5MZUsgF9w" target="_blank" class="leading-none">Join our community</a></button
-			>
+				<img src={Whapp} alt="WhatsApp icon" />
+				Join our community
+			</a>
 		</div>
 	</div>
-	<img src={HornMobile} alt="A fuckin Horn" class="h-60 w-[20rem] tenk24:hidden" />
-
-	<img src={Horn} alt="A fuckin Horn" class="hidden h-[75vh] tenk24:block" />
+	<img src={HornMobile} alt="Decorative horn" class="h-60 w-[20rem] tenk24:hidden" />
+	<img src={Horn} alt="Decorative horn" class="hidden h-[75vh] tenk24:block" />
 </section>
+
+<style>
+	.interactive-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.75rem;
+		padding: 0.75rem 1.25rem;
+		border-radius: 0.5rem;
+		font-size: 1.125rem;
+		font-weight: bold;
+		transition: all 0.2s ease;
+	}
+
+	.interactive-button:hover {
+		transform: scale(1.05);
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.interactive-button:active {
+		transform: scale(0.95);
+	}
+
+	@media (min-width: 1024px) {
+		.interactive-button {
+			padding: 1.25rem;
+		}
+	}
+</style>

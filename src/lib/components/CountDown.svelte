@@ -9,7 +9,7 @@
 		seconds: number;
 	}
 
-	const targetDate = new Date('2024-09-06T00:00:00');
+	const targetDate = new Date('2024-09-06T14:00:00');
 
 	if (!(targetDate instanceof Date)) {
 		throw new Error('targetDate must be a Date object');
