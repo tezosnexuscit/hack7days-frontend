@@ -26,14 +26,13 @@
 		</div>
 		<div class="flex w-full flex-wrap items-center gap-5">
 			<button class="flex rounded-lg bg-btn-blue p-3 text-lg font-bold text-white tenk24:p-4"
-				><a href="https://chat.whatsapp.com/IMEuQ5IFCegFz5MZUsgF9w" target="_blank">Register now</a
-				></button
+				>Register now</button
 			>
 			<button
 				class="flex items-center justify-center gap-3 rounded-lg bg-btn-green p-3 text-lg font-bold text-white tenk24:p-4"
 			>
 				<img src={Whapp} alt="" />
-				<p class="leading-none">Join our community</p></button
+				<a href="https://chat.whatsapp.com/IMEuQ5IFCegFz5MZUsgF9w" target="_blank" class="leading-none">Join our community</a></button
 			>
 		</div>
 	</div>
